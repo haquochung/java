@@ -1,45 +1,50 @@
-#CHESS
+# CHESS
 Chess hay trong tiếng Việt còn lại là Cờ vua, đôi khi còn được gọi là cờ phương Tây hoặc cờ quốc tế để phân biệt với các biến thể như cờ tướng, là một trò chơi board game dành cho hai người.
 
-##Chess Rule
+## Chess Rule
 Tham khảo thông tin tại link bên dưới:
 https://en.wikipedia.org/wiki/Rules_of_chess
 
-##Install to use
+## Install to use
 Các file để chạy thì đã được output tại folder **build_folder**:
 - Folder **server**: bố trí tại PC sẽ làm host.
 - Folder **app**: bố trí tại các PC của người chơi.
 - Chương trình sẽ ghi log vào thư mục log để có thể điều tra khi phát sinh error. Vui lòng post issue nếu có phát sinh vấn đề.
 
-##How to use?
+## How to use?
 Chương trình chia làm 2 phần chính:
 
-###Server
+### Server
+![server](https://github.com/haquochung/java/blob/main/blob/ChessServer.png?raw=true)<br />
 - Thông tin IP là cố định theo máy và không thể thay đổi sau khi khởi động.
 - Port của Server tại field Port.
 - Click "Start" để khởi động Server.
 - Chỉ hỗ trợ kết nối trong cùng mạng local
 
 
-###App
+### App
+![app](https://github.com/haquochung/java/blob/main/blob/ChessApp.png?raw=true)<br />
 - Server phải khởi động trước mới có thể sử dụng.
 - Chỉnh file server.txt trong thư mục config tương ứng với thông số của server.  
 - Khi mới vào cần input tên ít nhất là 3 ký tự và nhiều nhất là 10 ký tự.
 
-####Create And Join
+#### Create And Join
 - Để tạo bàn chơi mới click vào "New Game" trên giao diện chính.
-- Màn hình setting thông tin cho game sẽ được hiển thị
+- Màn hình setting thông tin cho game sẽ được hiển thị<br />
+  ![setting](https://github.com/haquochung/java/blob/main/blob/SettingGame.png?raw=true)
   - Chọn màu quân mong muốn (White Or Black)
   - Chọn thời gian cho mỗi người chơi
 - Để Join vào bàn chơi có sẵn thì:
   - Tại giao diện chính, sẽ có hiển thị danh sách bàn chơi đang có
   - Click vào phía bên trái (White) hoặc bên phải (Black) của bàn chơi để chọn phe
-  - Click vào phía dưới bàn chơi để vào xem
+  - Click vào phía dưới bàn chơi để vào xem<br />
+    ![info](https://github.com/haquochung/java/blob/main/blob/GameInfo.png?raw=true)
   >- Bàn chơi có màu tối nghĩa là trò chơi chưa bắt đầu, 1 trong 2 bên trái/phải mà không có hình của người chơi thể Join.
   >- Bàn chơi có màu sáng nghĩa là trò chơi đã bắt đầu, chỉ có thể vào xem. 
 
-####Play
-- Sau khi tạo bàn chơi thì sẽ hiện giao diện bàn chơi như bên dưới
+#### Play
+- Sau khi tạo bàn chơi thì sẽ hiện giao diện bàn chơi như bên dưới<br />
+  ![game](https://github.com/haquochung/java/blob/main/blob/ChessGame.png?raw=true)
 - Nếu bạn là người tạo ra bàn chơi thì bạn có quyển **Kick** người chơi khác nếu không thích đối thủ.
 - Nếu người tạo bàn thoát ra khỏi và bạn là người chơi còn lại bạn được cấp quyền là người tạo bàn để sử dụng quyền **Kick**
 - Để bắt đầu chơi bấm nút **OK** để sẵn sàng và đợi người chơi khác. Nếu người chơi khác cũng sẵn sàng thì trò chơi sẽ bắt đầu.
