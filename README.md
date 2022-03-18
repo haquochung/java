@@ -1,4 +1,4 @@
-# java
+# Java
 Java language
 
 ### JavaCore
