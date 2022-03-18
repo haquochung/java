@@ -15,7 +15,7 @@ Các file để chạy thì đã được output tại folder **build_folder**:
 Chương trình chia làm 2 phần chính:
 
 ### Server
-![server](https://github.com/haquochung/java/blob/main/blob/ChessServer.png?raw=true)<br />
+![server](https://github.com/haquochung/java/blob/main/blob/ChessServer.png?raw=true) <br />
 - Thông tin IP là cố định theo máy và không thể thay đổi sau khi khởi động.
 - Port của Server tại field Port.
 - Click "Start" để khởi động Server.
@@ -23,7 +23,7 @@ Chương trình chia làm 2 phần chính:
 
 
 ### App
-![app](https://github.com/haquochung/java/blob/main/blob/ChessApp.png?raw=true)<br />
+![app](https://github.com/haquochung/java/blob/main/blob/ChessApp.png?raw=true) <br />
 - Server phải khởi động trước mới có thể sử dụng.
 - Chỉnh file server.txt trong thư mục config tương ứng với thông số của server.  
 - Khi mới vào cần input tên ít nhất là 3 ký tự và nhiều nhất là 10 ký tự.
